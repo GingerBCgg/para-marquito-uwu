@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for you</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Haz clic 💖</h2>
+
+  <audio id="romantic-audio" hidden>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg" />
+    Tu navegador no soporta el audio.
+  </audio>
+
+  <script>
+    document.body.addEventListener('click', function () {
+      document.getElementById('romantic-audio').play();
+    }, { once: true });
+  </script>
+  <div class="message">I Love You</div>
+  <div id="bubbles-text"></div>
+  <script src="script.js"></script>
+</body>
+</html>
